@@ -6,6 +6,10 @@ public class Mars {
         boolean landing = true;
         landing = landingCheck(100);
 
+        new GuessingGame();
+        new MarsExpedition();
+        new FindingsLists();
+
         shipFood = (shipFood - (shipPopulation * 0.75)) * 2;
         System.out.println("The amount of food that is left is:" + shipFood);
 
