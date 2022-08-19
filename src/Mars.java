@@ -4,6 +4,14 @@ public class Mars {
         int shipPopulation = 300;
         double shipFood = 4000.00;
         boolean landing = true;
+        String landingLocation = "The Ocean";
+
+        if (landingLocation.equalsIgnoreCase("The Plain")) {
+            System.out.println("Bbzz Landing on the Plain");
+        } else {
+            System.out.println("Error!!!! Flight plan already set. Landing on the Plain");
+        }
+
         landing = landingCheck(100);
 
         new GuessingGame();
@@ -19,12 +27,9 @@ public class Mars {
 
         shipPopulation = shipPopulation + 5;
 
-        String landingLocation = "The Ocean";
-        if (landingLocation.equalsIgnoreCase("The Plain")) {
-            System.out.println("Bbzz Landing on the Plain");
-        } else {
-            System.out.println("Error!!!! Flight plan already set. Landing on the Plain");
-        }
+
+
+
     }
 
         public static boolean landingCheck(int loops) throws InterruptedException {
